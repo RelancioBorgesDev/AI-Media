@@ -59,7 +59,7 @@ export default function Settings() {
                   Instagram
                 </p>
               </span>
-              <Button variant={"outline"} className="text-zinc-950">
+              <Button variant={"default"} className="text-zinc-950">
                 Conectar
               </Button>
             </div>
@@ -72,7 +72,7 @@ export default function Settings() {
                   Facebook
                 </p>
               </span>
-              <Button variant={"outline"} className="text-zinc-950">
+              <Button variant={"default"} className="text-zinc-950">
                 Conectar
               </Button>
             </div>
@@ -82,10 +82,10 @@ export default function Settings() {
                 <h1 className="text-white font-bold">Whatsapp</h1>
                 <p className="text-gray-500">
                   Conecte sua conta para podermos ter acesso a seus dados do
-                  Whatsapp
+                  instagram
                 </p>
               </span>
-              <Button variant={"outline"} className="text-zinc-950">
+              <Button variant={"default"} className="text-zinc-950">
                 Conectar
               </Button>
             </div>
@@ -96,16 +96,18 @@ export default function Settings() {
                 <h1 className="text-white font-bold">Twitter</h1>
                 <p className="text-gray-500">
                   Conecte sua conta para podermos ter acesso a seus dados do
-                  Twitter
+                  instagram
                 </p>
               </span>
-              <Button variant={"outline"} className="text-zinc-950">
+              <Button variant={"default"} className="text-zinc-950">
                 Conectar
               </Button>
             </div>
           </div>
         </TabsContent>
-        <TabsContent value="password" className="text-white">Change your password here.</TabsContent>
+        <TabsContent value="password" className="text-white">
+          Change your password here.
+        </TabsContent>
       </Tabs>
     </main>
   );
