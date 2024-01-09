@@ -1,4 +1,3 @@
-"use client";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -6,6 +5,10 @@ import { ThemeProvider } from "@/components/theme/theme-provider";
 import { ReactNode } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "AI Media",
+};
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (

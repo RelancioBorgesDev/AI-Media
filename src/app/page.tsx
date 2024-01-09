@@ -10,7 +10,7 @@ import { Separator } from "@/components/ui/separator";
 export default function Home() {
   return (
     <div className="flex flex-col gap-8">
-      <section className="relative px-10 py-5">
+      <section id="inicio" className="relative px-10 py-5">
         <div className="absolute h-screen bg-cover bg-no-repeat bg-center top-0 bottom-0 right-0 left-0 pointer-events-none">
           <div className="bg-intro opacity-25 h-screen"></div>
         </div>
@@ -19,8 +19,8 @@ export default function Home() {
           <ul className="flex gap-8 items-center">
             <li>
               <Link
-                href={""}
-                className="flex gap-2 items-center cursor-pointer"
+                href={"#inicio"}
+                className="flex gap-2 items-center cursor-pointer text-xl hover:rounded-full hover:bg-slate-100/10 p-2 duration-500 transition-all ease-in-out"
               >
                 Inicio
                 <ChevronDown />
@@ -28,8 +28,8 @@ export default function Home() {
             </li>
             <li>
               <Link
-                href={""}
-                className="flex gap-2 items-center cursor-pointer"
+                href={"#sobre"}
+                className="flex gap-2 items-center cursor-pointer text-xl hover:rounded-full hover:bg-slate-100/10 p-2 duration-500 transition-all ease-in-out"
               >
                 Sobre
                 <ChevronDown />
@@ -37,18 +37,18 @@ export default function Home() {
             </li>
             <li>
               <Link
-                href={""}
-                className="flex gap-2 items-center cursor-pointer"
+                href={"#produtos"}
+                className="flex gap-2 items-center cursor-pointer text-xl hover:rounded-full hover:bg-slate-100/10 p-2 duration-500 transition-all ease-in-out"
               >
                 Produtos
                 <ChevronDown />
               </Link>
             </li>
           </ul>
-          <button className="bg-[#09090D] p-2 rounded-full hover:brightness-110 ">
+          <button className="bg-[#09090D] p-2 rounded-full hover:brightness-110  duration-100 group">
             <Link href={"/auth"} className="flex gap-2 items-center font-bold">
               Sign in
-              <MoveUpRight />
+              <MoveUpRight className="group-hover:scale-125" />
             </Link>
           </button>
         </header>
@@ -62,7 +62,7 @@ export default function Home() {
           </button>
         </section>
       </section>
-      <section className="h-screen px-10 py-5 flex flex-col gap-16">
+      <section id="sobre" className="h-screen px-10 py-5 flex flex-col gap-16">
         <header className="flex items-center justify-between px-10 py-4">
           <h1 className="text-6xl font-bold">Sobre</h1>
           <p className="w-[779px] text-2xl font-bold">
@@ -89,7 +89,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className=" px-10 py-5 flex flex-col gap-16">
+      <section id="produtos"className=" px-10 py-5 flex flex-col gap-16">
         <header className="flex flex-row-reverse items-center justify-between px-10 py-4">
           <h1 className="text-6xl font-bold">Produtos</h1>
           <p className="w-[779px] text-2xl font-bold">
