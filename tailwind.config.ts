@@ -18,6 +18,13 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        intro: "url('/introbg.jpg')",
+      },
+      height: {
+        "header-subtract": "calc(100vh - 94px)",
+        "header-subtract-intro": "calc(100vh - 140px)",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

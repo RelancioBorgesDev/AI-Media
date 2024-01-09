@@ -37,24 +37,24 @@ export default function Header() {
       <ul className="flex gap-4 items-center">
         <li
           className={`text-white font-bold p-3 cursor-pointer relative ${
-            activeLink === "/" && "border-b-2"
+            activeLink === "/dashboard" && "border-b-2"
           }`}
         >
-          <Link href="/">Dashboard</Link>
+          <Link href="/dashboard">Dashboard</Link>
         </li>
         <li
           className={`text-white font-extralight p-3 cursor-pointer relative  ${
-            activeLink === "/createContent" && "border-b-2"
+            activeLink === "/dashboard/createContent" && "border-b-2"
           }`}
         >
-          <Link href="/createContent">CreateContent</Link>
+          <Link href="/dashboard/createContent">CreateContent</Link>
         </li>
         <li
           className={`text-white font-extralight p-3 cursor-pointer relative  ${
-            activeLink === "/createPosts" && "border-b-2"
+            activeLink === "/dashboard/createPosts" && "border-b-2"
           }`}
         >
-          <Link href="/createPosts">CreatePosts</Link>
+          <Link href="/dashboard/createPosts">CreatePosts</Link>
         </li>
       </ul>
 

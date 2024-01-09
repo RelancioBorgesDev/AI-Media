@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function CreatePosts() {
   return (
-    <div>CreatePosts</div>
+    <div className='border-2 border-white'>CreatePosts</div>
   )
 }
