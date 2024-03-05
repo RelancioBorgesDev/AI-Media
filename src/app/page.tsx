@@ -1,3 +1,4 @@
+"use client";
 import Logo from "@/components/logo";
 import { ChevronDown, MoveUpRight } from "lucide-react";
 import Link from "next/link";
@@ -6,6 +7,7 @@ import Image from "next/image";
 import banner from "@/assets/banner-intro.jpg";
 import social from "@/assets/social-media.jpg";
 import { Separator } from "@/components/ui/separator";
+import { Link as ScrollLink } from "react-scroll";
 
 export default function Home() {
   return (
@@ -17,32 +19,34 @@ export default function Home() {
         <header className="flex items-center justify-between z-40 p-4 rounded">
           <Logo />
           <ul className="flex gap-8 items-center">
+            <li></li>
             <li>
-              <Link
-                href={"#inicio"}
+              <ScrollLink
+                to={"sobre"}
+                smooth={true}
+                duration={500} 
+                offset={0}
+                activeClass={"text-zinc-950 dark:text-slate-300 ml-6"}
                 className="flex gap-2 items-center cursor-pointer text-xl hover:rounded-full hover:bg-slate-100/10 p-2 duration-500 transition-all ease-in-out"
-              >
-                Inicio
-                <ChevronDown />
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={"#sobre"}
-                className="flex gap-2 items-center cursor-pointer text-xl hover:rounded-full hover:bg-slate-100/10 p-2 duration-500 transition-all ease-in-out"
+                spy={true}
               >
                 Sobre
                 <ChevronDown />
-              </Link>
+              </ScrollLink>
             </li>
             <li>
-              <Link
-                href={"#produtos"}
+              <ScrollLink
+                to={"produtos"}
+                smooth={true}
+                duration={500}
+                offset={-50}
+                activeClass={"text-zinc-950 dark:text-slate-300 ml-6"}
                 className="flex gap-2 items-center cursor-pointer text-xl hover:rounded-full hover:bg-slate-100/10 p-2 duration-500 transition-all ease-in-out"
+                spy={true}
               >
                 Produtos
                 <ChevronDown />
-              </Link>
+              </ScrollLink>
             </li>
           </ul>
           <button className="bg-[#09090D] p-2 rounded-full hover:brightness-110  duration-100 group">
@@ -89,7 +93,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="produtos"className=" px-10 py-5 flex flex-col gap-16">
+      <section id="produtos" className=" px-10 py-5 flex flex-col gap-16">
         <header className="flex flex-row-reverse items-center justify-between px-10 py-4">
           <h1 className="text-6xl font-bold">Produtos</h1>
           <p className="w-[779px] text-2xl font-bold">

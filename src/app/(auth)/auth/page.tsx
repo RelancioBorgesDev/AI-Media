@@ -18,12 +18,16 @@ export default function Auth() {
       </div>
       <div className="relative flex flex-col p-5 h-screen justify-center items-center ">
         <div className="w-[402px] flex flex-col gap-2">
-          <Button className="w-full bg-[#37323E] text-white font-bold text-2xl hover:bg-slate-800">
-            <Link href="/login">Login</Link>
-          </Button>
-          <Button className="w-full bg-[#37323E] text-white font-bold text-2xl hover:bg-slate-800">
-            <Link href="/signin">Cadastro</Link>
-          </Button>
+          <Link href="/login">
+            <Button className="w-full bg-[#37323E] text-white font-bold text-2xl hover:bg-slate-800">
+              Login
+            </Button>
+          </Link>
+          <Link href="/signin">
+            <Button className="w-full bg-[#37323E] text-white font-bold text-2xl hover:bg-slate-800">
+              Cadastro
+            </Button>
+          </Link>
         </div>
         <span className="absolute bottom-8">
           <Logo />
