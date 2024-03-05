@@ -8,7 +8,7 @@ import { Link as ScrollLink } from "react-scroll";
 export default function IntroHeader() {
   return (
     <header className="flex items-center justify-between z-40 p-4 rounded">
-      <Logo />
+      <Logo logo_link="/" />
       <ul className="flex gap-8 items-center">
         <li></li>
         <li>

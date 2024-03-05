@@ -1,11 +1,10 @@
 "use client";
 import { useEffect, useState } from "react";
-import Logo from "./logo";
-import { Separator } from "./ui/separator";
+import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Button } from "./ui/button";
-import { Gear, Moon, SignOut, User } from "phosphor-react";
+import { Button } from "@/components/ui/button";
+import { Gear, SignOut } from "phosphor-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -13,10 +12,11 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "./ui/dropdown-menu";
+} from "@/components/ui/dropdown-menu";
 import Image from "next/image";
 import { useTheme } from "next-themes";
 import { MoonIcon, SunIcon } from "lucide-react";
+import Logo from "@/components/logo";
 
 export default function Header() {
   const router = usePathname();
@@ -30,7 +30,7 @@ export default function Header() {
   return (
     <header className="bg-zinc-900 w-full p-5 flex items-center justify-between gap-16 shadow-2xl">
       <div className="flex items-center">
-        <Logo />
+        <Logo logo_link="/dashboard" />
         <Separator orientation="vertical" className="h-6" />
       </div>
 
